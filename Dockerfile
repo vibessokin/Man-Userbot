@@ -1,4 +1,4 @@
-FROM mrismanaziz/Man-Userbot:buster
+FROM mrismanaziz/man-userbot:buster
 
 RUN git clone -b Man-Userbot https://github.com/kintamanibeans/Man-Userbot /home/manuserbot/ \
     && chmod 777 /home/manuserbot \
