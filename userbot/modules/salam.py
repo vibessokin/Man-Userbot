@@ -7,7 +7,7 @@ from userbot.utils import edit_or_reply, man_cmd
 
 @man_cmd(pattern="p(?: |$)(.*)")
 async def _(event):
-    await edit_or_reply(event, "**Assalamualaikum Dulu Biar Sopan**")
+    await edit_or_reply(event, "**Assalamualaikum Brads!**")
 
 
 @man_cmd(pattern="pe(?: |$)(.*)")
@@ -24,7 +24,7 @@ async def _(event):
 
 @man_cmd(pattern="l(?: |$)(.*)")
 async def _(event):
-    await edit_or_reply(event, "**Wa'alaikumsalam**")
+    await edit_or_reply(event, "**Wa'alaikumsalam brads! Ngopi dulu yu**")
 
 
 @man_cmd(pattern="a(?: |$)(.*)")
@@ -59,7 +59,7 @@ CMD_HELP.update(
     {
         "salam": f"**Plugin : **`salam`\
         \n\n  •  **Syntax :** `{cmd}p`\
-        \n  •  **Function : **Assalamualaikum Dulu Biar Sopan..\
+        \n  •  **Function : **Assalamualaikum Brads!\
         \n\n  •  **Syntax :** `{cmd}pe`\
         \n  •  **Function : **salam Kenal dan salam\
         \n\n  •  **Syntax :** `{cmd}l`\
