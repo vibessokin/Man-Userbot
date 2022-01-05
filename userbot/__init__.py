@@ -152,7 +152,7 @@ GITHUB_ACCESS_TOKEN = os.environ.get("GITHUB_ACCESS_TOKEN", None)
 
 # Custom (forked) repo URL for updater.
 UPSTREAM_REPO_URL = os.environ.get(
-    "UPSTREAM_REPO_URL", "https://github.com/mrismanaziz/Man-Userbot.git"
+    "UPSTREAM_REPO_URL", "https://https://github.com/kintamanibeans/Man-Userbot.git"
 )
 
 # SQL Database URI
@@ -540,7 +540,7 @@ with bot:
                 )
             else:
                 result = builder.article(
-                    title="✗ Man-Userbot ✗",
+                    title="✗ TELEGRAM VIBES ✗",
                     description="Man - UserBot | Telethon",
                     url="https://t.me/SharingUserbot",
                     thumb=InputWebDocument(INLINE_PIC, 0, "image/jpeg", []),
@@ -564,7 +564,7 @@ with bot:
             if event.query.user_id == uid or event.query.user_id in SUDO_USERS:
                 current_page_number = int(looters)
                 buttons = paginate_help(current_page_number, dugmeler, "helpme")
-                text = f"**✗ Man-Userbot Inline Menu ✗**\n\n✣ **Owner** [{user.first_name}](tg://user?id={user.id})\n✣ **Jumlah** `{len(dugmeler)}` Modules"
+                text = f"**✗ TELEGRAM VIBES Inline Menu ✗**\n\n✣ **Owner** [{user.first_name}](tg://user?id={user.id})\n✣ **Jumlah** `{len(dugmeler)}` Modules"
                 await event.edit(
                     text,
                     file=logoman,
