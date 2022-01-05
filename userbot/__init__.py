@@ -212,11 +212,11 @@ BOT_VER = os.environ.get("BOT_VER", "2.1.2")
 
 # Default .alive logo
 ALIVE_LOGO = (
-    os.environ.get("ALIVE_LOGO") or "https://telegra.ph/file/9dc4e335feaaf6a214818.jpg"
+    os.environ.get("ALIVE_LOGO") or "https://telegra.ph/file/8a840b67197ad81f968be.jpg"
 )
 
 INLINE_PIC = (
-    os.environ.get("INLINE_PIC") or "https://telegra.ph/file/9dc4e335feaaf6a214818.jpg"
+    os.environ.get("INLINE_PIC") or "https://telegra.ph/file/8a840b67197ad81f968be.jpg"
 )
 
 # Last.fm Module
@@ -305,7 +305,7 @@ async def check_botlog_chatid() -> None:
 async def update_restart_msg(chat_id, msg_id):
     DEFAULTUSER = ALIVE_NAME or "Set `ALIVE_NAME` ConfigVar!"
     message = (
-        f"**Man-UserBot v{BOT_VER} is back up and running!**\n\n"
+        f"**TELEGRAM VIBES UBOT v{BOT_VER} is back up and running!**\n\n"
         f"**Telethon:** {version.__version__}\n"
         f"**Python:** {python_version()}\n"
         f"**User:** {DEFAULTUSER}"
