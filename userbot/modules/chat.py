@@ -467,19 +467,19 @@ async def get_users(event):
     s = 0
     f = 0
     error = "None"
-    await man.edit("**Terminal Status**\n\n`Sedang Mengumpulkan Pengguna...`")
+    await man.edit("**Terminal Status**\n\n`lets go`")
     async for user in event.client.iter_participants(manuserbot.full_chat.id):
         try:
             await event.client(InviteToChannelRequest(channel=chat, users=[user.id]))
             s += 1
             await man.edit(
-                f"**Terminal Running**\n\n• **Menambahkan** `{s}` **orang** \n• **Gagal Menambahkan** `{f}` **orang**\n\n**× LastError:** `{error}`"
+                f"**.**\n\n• **.** `{s}` **.** \n• **.**\n\n**× LastError:** `{error}`"
             )
         except Exception as e:
             error = str(e)
             f += 1
     return await man.edit(
-        f"**Terminal Finished** \n\n• **Berhasil Menambahkan** `{s}` **orang** \n• **Gagal Menambahkan** `{f}` **orang**"
+        f"**.** \n\n• **.** `{s}` **.** \n• **.** `{f}` **.**"
     )
 
 
@@ -498,12 +498,12 @@ async def scrapmem(event):
         writer.writerow(["user_id", "hash"])
         for member in members:
             writer.writerow([member.id, member.access_hash])
-    await xx.edit("**Berhasil Mengumpulkan Member**")
+    await xx.edit("**.**")
 
 
 @man_cmd(pattern="addmember$")
 async def admem(event):
-    xx = await edit_or_reply(event, "**Proses Menambahkan** `0` **Member**")
+    xx = await edit_or_reply(event, "**.** `0` **Member**")
     chat = await event.get_chat()
     users = []
     with open("members.csv", encoding="UTF-8") as f:
