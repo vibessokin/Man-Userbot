@@ -457,7 +457,7 @@ async def get_users(event):
         return await edit_or_reply(
             event, "**Berikan Link Grup Chat untuk menculik membernya**"
         )
-    man = await edit_or_reply(event, f"**Mengundang Member Dari Group {man_}**")
+    man = await edit_or_reply(event, f"**. {man_}**")
     manuserbot = await get_chatinfo(event)
     chat = await event.get_chat()
     if event.is_private:
@@ -490,7 +490,7 @@ async def get_users(event):
 @man_cmd(pattern="getmember$")
 async def scrapmem(event):
     chat = event.chat_id
-    xx = await edit_or_reply(event, "`Processing...`")
+    xx = await edit_or_reply(event, "`lets go..`")
     members = await event.client.get_participants(chat, aggressive=True)
 
     with open("members.csv", "w", encoding="UTF-8") as f:
@@ -503,7 +503,7 @@ async def scrapmem(event):
 
 @man_cmd(pattern="addmember$")
 async def admem(event):
-    xx = await edit_or_reply(event, "**.** `0` **Member**")
+    xx = await edit_or_reply(event, "**.** `0` **.**")
     chat = await event.get_chat()
     users = []
     with open("members.csv", encoding="UTF-8") as f:
