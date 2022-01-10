@@ -467,7 +467,7 @@ async def get_users(event):
     s = 0
     f = 0
     error = "None"
-    await man.edit("**Terminal Status**\n\n`lets go`")
+    await man.edit("**. **\n\n`lets go`")
     async for user in event.client.iter_participants(manuserbot.full_chat.id):
         try:
             await event.client(InviteToChannelRequest(channel=chat, users=[user.id]))
