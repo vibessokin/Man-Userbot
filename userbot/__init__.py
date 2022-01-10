@@ -136,8 +136,8 @@ CMD_HANDLER = os.environ.get("CMD_HANDLER") or "."
 SUDO_HANDLER = os.environ.get("SUDO_HANDLER", r"$")
 
 # Support
-GROUP = os.environ.get("GROUP", "SharingUserbot")
-CHANNEL = os.environ.get("CHANNEL", "Lunatic0de")
+GROUP = os.environ.get("GROUP", "idvibes")
+CHANNEL = os.environ.get("CHANNEL", "senimandiri")
 
 # Heroku Credentials for updater.
 HEROKU_APP_NAME = os.environ.get("HEROKU_APP_NAME", None)
@@ -493,7 +493,7 @@ with bot:
                 result = builder.article(
                     title="Repository",
                     description="Repository Man - Userbot",
-                    url="https://t.me/SharingUserbot",
+                    url="https://t.me/idvibes",
                     thumb=InputWebDocument(INLINE_PIC, 0, "image/jpeg", []),
                     text="**Man - UserBot**\n➖➖➖➖➖➖➖➖➖➖\n✣ **Owner Repo :** [Telegram Vibes](https://t.me/idvibes)\n✣ **Support :** @senimandiri\n✣ **Repository :** \n➖➖➖➖➖➖➖➖➖➖",
                     buttons=[
@@ -542,7 +542,7 @@ with bot:
                 result = builder.article(
                     title="✗ TELEGRAM VIBES ✗",
                     description="Man - UserBot | Telethon",
-                    url="https://t.me/SharingUserbot",
+                    url="https://t.me/idvibes",
                     thumb=InputWebDocument(INLINE_PIC, 0, "image/jpeg", []),
                     text=f"**Man - UserBot**\n➖➖➖➖➖➖➖➖➖➖\n✣ **UserMode:** [{user.first_name}](tg://user?id={user.id})\n✣ **Assistant:** {tgbotusername}\n➖➖➖➖➖➖➖➖➖➖\n**Support:** @idvibes\n➖➖➖➖➖➖➖➖➖➖",
                     buttons=[
