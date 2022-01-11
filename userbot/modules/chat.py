@@ -515,16 +515,16 @@ async def admem(event):
     n = 0
     for user in users:
         n += 1
-        if n % 30 == 0:
+        if n % 40 == 0:
             await xx.edit(
-                f"**Sudah Mencapai 30 anggota, Tunggu Selama** `{900/60}` **menit**"
+                f"**Sudah Mencapai 40 anggota, Tunggu Selama** `{900/60}` **menit**"
             )
             await asyncio.sleep(900)
         try:
             userin = InputPeerUser(user["id"], user["hash"])
             await event.client(InviteToChannelRequest(chat, [userin]))
             await asyncio.sleep(random.randrange(5, 7))
-            await xx.edit(f"**Proses Menambahkan** `{n}` **Member**")
+            await xx.edit(f"**hoam** `{n}` **...**")
         except TypeError:
             n -= 1
             continue
