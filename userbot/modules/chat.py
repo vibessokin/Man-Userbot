@@ -564,7 +564,7 @@ CMD_HELP.update(
         "invite": f"**Plugin : **`invite`\
         \n\n  •  **Syntax :** `{cmd}invite` <username/user id>\
         \n  •  **Function : **Untuk Menambahkan/invite pengguna ke group chat.\
-        \n\n  •  **Syntax :** `{cmd}inviteall` <username grup yang mau di culik membernya>\
+        \n\n  •  **Syntax :** `{cmd}yokgas` <username grup yang mau di culik membernya>\
         \n  •  **Function : **Untuk Menambahkan/invite pengguna dari grup yang ditargetkan ke grup Anda. (ketik perintah `.inviteall` di gc lu)\
     "
     }
